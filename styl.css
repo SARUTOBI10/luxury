@@ -44,7 +44,7 @@ header .logo span{
 }
 .menu li {
     list-style: none;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 .menu li a{
     font-size: 14px;
@@ -59,7 +59,7 @@ header button{
     background-color: red;
     cursor: pointer;
     color: #fff;
-    padding: 5px 25px;
+    padding: 2.5px 15px;
 }
 #home{
     margin-top: 50px;
@@ -189,7 +189,7 @@ header button{
 #cars li a {
     background-color: red;
     color: #ffffff;
-    padding:  5px 20px;
+    padding:  2.5px 5px;
     font-size: 15px;
 }
 #services {
@@ -308,42 +308,46 @@ header button{
 footer {
     background-color: red;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
     color: #fff;
-    font-size: 14PX;
+    font-size: 15px;
 }
 .menu_toggle {
     display: none;
 }
 
 /*Responsive*/
-@media (max-width:682px) {
+@media screen and (max-width:1000px) and(min-width:300px) {
     header {
         padding: 0 10px;
+        height: 5%;
+        width: 5%;
     }
     header .menu {
         display: none;
     }
     #home {
-        padding: 0 10%;  
+        padding: 0 2.5%;
+        height: 5%;
+        width: 5%; 
         justify-content: center;
         flex-direction: column;
     }
     #home .left , #home .right  {
-        width: 100%;
+        width: 50%;
     }
     .right {
         margin-top: 50px;
         width:  60%;
     }
     .image li {
-        width:  100%;
+        width:  50%;
     }
     #services{
-        padding: 0 10px;
+        padding: 0 5px;
     }
     .service {
-        width: 100%;
+        width: 50%;
     }
     #contact {
         height: auto;
@@ -351,10 +355,10 @@ footer {
     .localisation_contact_div {
         height: auto;
         flex-direction: column;
-        width: 100%;
+        width: 50%;
     }
     .localisation {
-        width: 100%;
+        width: 50%;
         margin-bottom: 30px;
     }
     .localisation_contact_div .form_contact {
@@ -409,11 +413,11 @@ footer {
     }
     header .menu.responsive {
         position: absolute;
-        top: 50px;
+        top: 25px;
         left: 0;
         display: flex;
-        width:  100%;
-        height: 50px;
+        width:  50%;
+        height: 25px;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
@@ -426,3 +430,4 @@ footer {
 
 
 }
+
